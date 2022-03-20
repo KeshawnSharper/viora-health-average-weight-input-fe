@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {font-family: Roboto, "Helvetica Neue", sans-serif; }
+      button {
+        position: relative;
+        height:  50px;
+        width: 100px;
+        color: white;
+        cursor:pointer;
+        padding: 0;
+border: none;
+background: none;
+      }
+      .content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      h2{
+          text-align: center;
+      }
+      .text-glow {
+        text-shadow: 0 0 10px #fff, 0 0 20px #0fa, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+        color: black;
+        font-size: 30px;
+        text-align: center;	  	
+       }
+      @keyframes glowing {
+        0% { box-shadow: 0 0 -10px #0fa; }
+        40% { box-shadow: 0 0 20px #0fa; }
+        60% { box-shadow: 0 0 20px #0fa; }
+        100% { box-shadow: 0 0 -10px #0fa; }
+      }
+      
+      .button-glow {
+        animation: glowing 5000ms infinite;
+      }
+      
+    
+     
+    
+
