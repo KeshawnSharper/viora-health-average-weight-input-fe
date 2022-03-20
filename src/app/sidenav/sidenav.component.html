@@ -1,0 +1,11 @@
+
+
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened><app-side-content [showTrends]=showTrends [showLogs]=showLogs [isTrendsShowing]=isTrendsShowing></app-side-content></mat-drawer>
+    <mat-drawer-content>
+         <app-trends *ngIf="isTrendsShowing"></app-trends>
+        <app-logs *ngIf="!isTrendsShowing"></app-logs>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

@@ -1,0 +1,20 @@
+<div class="content">
+    <button class="button-glow" (click)="showDailyChart()">Show Daily Chart</button>
+    <button class="button-glow"  (click)="showWeeklyChart()">Show Weekly Chart</button>
+    <p class="text-glow"> Average Inputed Weight Over Time</p>
+    <br/>
+
+  <div>
+
+  <h3>{{isDailyChart ? 'Daily Chart' : 'Weekly Chart'}}</h3>
+  <div class="graph-container">
+    <div class="vertical-container">Weight In lbs</div>
+  <div class="graph-wrapper">
+    <canvas class="chart" id="canvas">{{dailyChart}}</canvas>
+  </div>
+  </div>
+  <h3>Entered Dates</h3>
+  </div>
+</div>
+
+ 

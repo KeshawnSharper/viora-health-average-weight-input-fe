@@ -1,0 +1,29 @@
+.graph-container{
+    display: inline-flex;
+    width: 70%;
+}
+h3{
+    text-align: center;
+}
+.chart{
+    width:700px;
+}
+.graph-wrapper{
+    width:320px;
+}
+@media only screen and (min-width : 768px) {
+    .graph-wrapper{
+        width:600px;
+    }
+    }
+    
+  @media only screen and (min-width: 1025px) {
+    /* For desktop: */
+    .graph-wrapper{
+        width:900px;
+    }
+  }
+  
+
+
+

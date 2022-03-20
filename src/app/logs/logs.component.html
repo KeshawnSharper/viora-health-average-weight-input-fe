@@ -1,0 +1,15 @@
+
+<form class="example-form" [formGroup]="weightInputForm" class="content">
+  <p class="text-glow"> Input Weight and Date</p>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Enter an input Date</mat-label>
+      <input  color="white" type="date" matInput formControlName="date">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Enter a weight in Ibs</mat-label>
+      <input type="number" matInput formControlName="weight">
+    </mat-form-field>
+    <button class="button-glow" (click)="submit()">Submit</button>
+  </form>

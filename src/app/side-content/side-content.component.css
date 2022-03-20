@@ -1,0 +1,12 @@
+button{ 
+    width: 100%;
+    padding:25px;
+}
+button:hover{
+    background-color:black;
+    color:#0fa;
+}
+.active{
+    background-color:#0fa;
+    color:black;
+}
